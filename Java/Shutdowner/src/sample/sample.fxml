@@ -1,0 +1,37 @@
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      alignment="CENTER"
+      spacing="10">
+
+    <TextField fx:id="incomeSec" promptText="Minutes" maxWidth="150" alignment="BASELINE_CENTER" minHeight="30"/>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button fx:id="startShutdown" text="Start" onAction="#shotdown" minHeight="30" minWidth="85"/>
+        <Button fx:id="abortShutdown" text="Stop" onAction="#abortShutdown" minHeight="30" minWidth="85"/>
+        <Button fx:id="btnCloseApp" text="Close" onAction="#btnCloseApp" minHeight="30" minWidth="85"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER" minHeight="15"></HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="5" text="5" onAction="#setFiveMin" minHeight="30" minWidth="85"/>
+        <Button fx:id="20" text="20" onAction="#setTwentyMin" minHeight="30" minWidth="85"/>
+        <Button fx:id="40" text="40" onAction="#setFortyMin" minHeight="30" minWidth="85"/>
+    </HBox>
+
+
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="60" text="60" onAction="#setSixtyMin" minHeight="30" minWidth="85"/>
+        <Button fx:id="120" text="120" onAction="#setOneHundredTwentyMin" minHeight="30" minWidth="85"/>
+        <Button fx:id="150" text="150" onAction="#setOneHundredFiftyMin" minHeight="30" minWidth="85"/>
+    </HBox>
+
+
+</VBox>
